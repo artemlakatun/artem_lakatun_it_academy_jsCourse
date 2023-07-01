@@ -1,0 +1,19 @@
+{
+  "name": "hw-1-operators-statements",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm test -- --watchAll"
+  },
+  "jest": {
+    "testPathIgnorePatterns": ["res"]
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.1.2"
+  }
+}
