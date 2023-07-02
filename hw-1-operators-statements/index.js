@@ -121,15 +121,12 @@ const getMultiplicationTable = () => {          // +- passed
   let table = '';
 
   for (let digit = 2; digit <= 9; digit++) {
-
-
+    table += `==== ${digit} ==== \n`
     for (let number = 1; number <= 10; number++) {
       let result = digit * number;
-      table += `${digit} * ${number} = ${result}\n`;
+      table += `${digit} * ${number} = ${result} \n`;
     }
-    table += '\n';
   }
-
   return table;
 };
 
