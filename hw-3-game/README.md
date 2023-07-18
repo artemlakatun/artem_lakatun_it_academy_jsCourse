@@ -1,3 +1,6 @@
+## Visit my game-site! (Rock, scissors, paper game)
+### https://artemlakatun.github.io/artem_lakatun_it_academy_jsCourse/hw-3-game/index.html
+___
 # Rock, scissors, paper game
 
 ## Requirements
