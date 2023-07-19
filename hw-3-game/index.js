@@ -65,8 +65,6 @@ function getUserChoice () {
     if(userChoice === null) {
         confirm('You aborted this game. To start new game just refresh the page.');
         rockScissorsPaperGame();
-    } else if(userChoice) {
-        userChoice.toLowerCase();
     } else if(!userValidChoice(userChoice)) {
         alert('Invalid choice. Please make your move again!')
         getUserChoice();
