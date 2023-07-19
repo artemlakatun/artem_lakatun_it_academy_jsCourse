@@ -50,7 +50,7 @@ function playRound (user, countUser, countComputer) {
         if (countUser === 3) {
             alert(`Congratulations. You won this game. Count - You: ${countUser} : Computer ${countComputer}`);
         } else {
-            alert(`Sorry. You lost this game. Count - You: ${countUser} : Computer ${countComputer}`)
+            alert(`Sorry. You lost this game. Count - You: ${countUser} : Computer ${countComputer}`);
         }
     }
     let playAgain = confirm('Play again?');
