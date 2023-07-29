@@ -4,7 +4,7 @@
  */
 // function returns string without spaces from the beginning and from the end, and in upper letter register
 const transformString = (str) => {
-  // write your code here
+  return str.trim().toUpperCase();
 };
 
 /**
@@ -13,7 +13,11 @@ const transformString = (str) => {
  */
 // function should return max number from array
 const findMaxNumber = (array) => {
-  // write your code here
+  if (array.length === 0) {
+    return NaN;
+  }
+
+  return Math.max(...array);
 };
 
 /**
@@ -22,7 +26,12 @@ const findMaxNumber = (array) => {
  */
 // function returns array of length of every word in string
 const getStringWordsLength = (str) => {
-  // write your code here
+  if(str.length === 0) {
+    return [];
+  }
+
+  let wordsArr = str.split(', ');
+  return wordsArr.map((word) => word.length);
 };
 
 /**
@@ -32,7 +41,11 @@ const getStringWordsLength = (str) => {
  */
 // function returns array of numbers as result of initial number and degree
 const getTransformedNumbers = (numArray, degree) => {
-  // write your code here
+  if (numArray.length === 0) {
+    return [];
+  }
+
+  return numArray.map((power) => Math.pow(power, degree));
 };
 
 /**
@@ -41,7 +54,7 @@ const getTransformedNumbers = (numArray, degree) => {
  */
 // function returns text with all first letters at the beginning of sentence capitalized
 const getTransformedText = (text) => {
-  // write your code here
+  return text.replace(/(^|[.!?]\s+)(\w)/g, (match) => match.toUpperCase());
 };
 
 /**
@@ -50,7 +63,7 @@ const getTransformedText = (text) => {
  */
 // function filters array and return only array of positive integers
 const getPositiveIntegers = (array) => {
-  // write your code here
+  return array.filter((number) => Number.isInteger(number) && number > 0)
 };
 
 /**
@@ -60,7 +73,7 @@ const getPositiveIntegers = (array) => {
  */
 // functions return index of element in array
 const getElementIndex = (array, value) => {
-  // write your code here
+  return array.indexOf(value);
 };
 
 /**
@@ -70,7 +83,7 @@ const getElementIndex = (array, value) => {
  */
 // function returns item from array or undefined if item is not found
 const getItem = (array, value) => {
-  // write your code here
+  return array.find((element) => element === value);
 };
 
 /**
@@ -80,7 +93,10 @@ const getItem = (array, value) => {
  */
 // function returns true if word is in every string in array and false if is not
 const isWordInEveryArrayString = (array, word) => {
-  // write your code here
+  if (array.length === 0) {
+    return false;
+  }
+  return !array.some((line) => !line.includes(word));
 };
 
 /**
@@ -89,7 +105,11 @@ const isWordInEveryArrayString = (array, word) => {
  */
 // function returns true if any number in array is negative
 const isNegativeNumbersInArray = (array) => {
-  // write your code here
+  if (array.length === 0) {
+    return false;
+  }
+
+  return array.some((num) => num < 0);
 };
 
 /**
@@ -100,7 +120,11 @@ const isNegativeNumbersInArray = (array) => {
  */
 // function returns part of array from start to end (including end) positions
 const returnArrayPart = (array, startPosition, endPosition) => {
-  // write your code here
+  if (array.length === 0) {
+    return [];
+  }
+
+  return array.slice(startPosition, endPosition + 1);
 };
 
 
