@@ -29,23 +29,39 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .btn-primaryOnce {
-  width: 20%;
+  width: 32%;
   height: 40px;
-  margin: 8px 0 8px 0;
+  margin: 8px 0;
   background: green;
   border-color: grey;
 }
 
 .myNavbar-Elem {
-  width: 30%;
+
 }
 
 .form-control-me {
-  width: 64%;
+  width: 100%;
+  max-width: 200px;
+}
+
+/* products */
+
+.products {
+  width: 80%;
+  height: 50px;
+  margin: 0 auto 0 auto;
+}
+
+.products>h3 {
+  margin-left: 6%;
+  margin-bottom: 0;
+  padding-top: 10px;
 }
 
 /* main-container */
@@ -61,4 +77,64 @@ body {
 
 .card {
   margin: 15px auto 15px auto;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-text {
+  max-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  margin-top: auto;
+}
+
+.price-rating {
+  width: 100%;
+  height: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.price {
+  text-align: center;
+  margin: auto 0 auto 0;
+}
+
+.rating {
+  text-align: center;
+  margin: auto 0 auto 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .main-container {
+    grid-template-columns: 1fr;
+    height: 12000px;
+  }
+
+  .btn-primaryOnce {
+    width: 32%;
+    height: 40px;
+    margin: 8px 0;
+    background: green;
+    border-color: grey;
+    font-size: 9px;
+  }
 }
