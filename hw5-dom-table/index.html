@@ -24,7 +24,7 @@
         <div class="container-fluid">
           <form class="d-flex" role="search">
             <input class="form-control me-2 form-control-me" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
+            <button id="searchButton" class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </nav>
@@ -321,6 +321,23 @@
         </div>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <div class="order-menu">
+    <div class="order-header">
+      Your Order
+      <button class="close-button">&times;</button>
+    </div>
+    <div class="empty-cart">
+      <div class="order-content">
+        <!-- Список товаров в корзине будет здесь -->
+        <div class="order-items-container">
+          <!-- Список товаров в корзине будет здесь -->
+        </div>
+      </div>
+      <div class="total-price">Total: <span class="total-amount">$0.00</span></div>
+      <button class="order-button">Order</button>
     </div>
   </div>
 </body>
